@@ -1,8 +1,19 @@
-import '../styles/globals.css'
 import type { AppProps } from 'next/app'
+import Head from 'next/head'
+import { ThemeProvider } from 'styled-components'
+import { GlobalStyle, Theme } from 'styles/theme'
 
-function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+export default function App({ Component, pageProps }: AppProps) {
+ return (
+  <>
+   <Head>
+    <title>QuaCode</title>
+   </Head>
+
+   <GlobalStyle />
+   <ThemeProvider theme={Theme}>
+    <Component {...pageProps} />
+   </ThemeProvider>
+  </>
+ )
 }
-
-export default MyApp

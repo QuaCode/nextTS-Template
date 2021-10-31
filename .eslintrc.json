@@ -1,3 +1,44 @@
 {
-  "extends": "next/core-web-vitals"
+ "env": {
+  "browser": true,
+  "node": true
+ },
+ "extends": [
+  "eslint:recommended",
+  "next/core-web-vitals",
+  "plugin:react/recommended",
+  "plugin:react/all",
+  "plugin:react-hooks/recommended",
+  "prettier"
+ ],
+ "rules": {
+  "semi": ["error", "never"],
+  "quotes": ["error", "single"],
+  "react-hooks/rules-of-hooks": "error",
+  "react-hooks/exhaustive-deps": "warn",
+  "react/jsx-no-literals": "off",
+  "react/function-component-definition": "off",
+  "react/react-in-jsx-scope": "off",
+  "react/jsx-props-no-spreading": "off",
+  "react/jsx-max-depth": ["off"],
+  "arrow-parens": ["error", "as-needed"],
+  "react/jsx-no-bind": "off",
+  "react/no-array-index-key": "off",
+  "react/jsx-filename-extension": [2, { "extensions": [".js", ".jsx", ".ts", ".tsx"] }],
+  "react/forbid-component-props": ["off"],
+  "import/no-unresolved": [
+   "error",
+   { "ignore": ["@common", "@hooks", "@layout", "@utils", "@components"] }
+  ],
+  "import/order": [
+   "warn",
+   {
+    "groups": ["builtin", "external", "parent", "sibling", "index"],
+    "alphabetize": {
+     "order": "asc",
+     "caseInsensitive": true
+    }
+   }
+  ]
+ }
 }
