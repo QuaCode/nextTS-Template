@@ -26,10 +26,7 @@
   "react/no-array-index-key": "off",
   "react/jsx-filename-extension": [2, { "extensions": [".js", ".jsx", ".ts", ".tsx"] }],
   "react/forbid-component-props": ["off"],
-  "import/no-unresolved": [
-   "error",
-   { "ignore": ["@common", "@hooks", "@layout", "@utils", "@components"] }
-  ],
+  "import/no-unresolved": ["error"],
   "import/order": [
    "warn",
    {

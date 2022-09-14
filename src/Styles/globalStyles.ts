@@ -47,12 +47,3 @@ input[type="file" i] {
     font-family: 'Fira Code', sans-serif;
   }
 `
-
-export const Theme = {
- color_black: '#111111',
- color_yellow: '#F7DF1E',
- color_white: '#FFFFFF',
- color_white_black: '#F8F8F8',
- color_yellow_dark: '#FBBB18',
- color_gray: '#333333',
-}
